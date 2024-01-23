@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robot Arm</title>
+
+    <script type="text/javascript" src="Common/initShaders2.js"></script>
+    <script type="text/javascript" src="Common/MVnew.js"></script>
+    <script type="text/javascript" src="Common/flatten.js"></script>
+    <script type="text/javascript" src="robot_arm.js"></script>
+
+    <style>
+        body {
+            display: flex;
+        }
+
+        #gl-container {
+            width: 50%; /* Adjust as needed */
+        }
+
+        #controls-container {
+            width: 25%; /* Adjust as needed */
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- This is the canvas - the only HTML element that can render WebGL 
+         graphics. You can have more than one WebGL canvas on a web page, but
+         that gets tricky. Stick to one per page for now. -->
+         <div id="gl-container">
+            <!-- This is the canvas - the only HTML element that can render WebGL graphics. -->
+            <canvas id="gl-canvas" width="512" height="512">
+                Oops ... your browser doesn't support the HTML5 canvas element
+            </canvas>
+        </div>
+    
+        <div id="controls-container">
+            <p>1- Rotating Shoulders.</p>
+            <p>2- Rotating Elbows.</p>
+            <p>3- Rotating the arm on the x-axis.</p>
+            <p>4- Rotating the arm on the y-axis.</p>
+            <p>5- Rotating the fingers on the x-axis with positive direction.</p>
+            <p>6- Rotating the fingers on the x-axis with negative direction.</p>
+            <p>7- Rotating the fingers on the y-axis with positive direction.</p>
+            <p>8- Rotating the fingers on the y-axis with negative direction.</p>
+            <p>9- Switching shape between solid and wire cubes.</p>
+            <p>10- Switching projection to ortho.</p>
+        </div>
+</body>
+</html>
